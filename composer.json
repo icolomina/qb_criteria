@@ -1,5 +1,5 @@
 {
-    "name": "nacho/qb_criteria",
+    "name": "ict/qb_criteria",
     "description": "Easily add criteria to your doctrine orm queries",
     "type": "library",
     "require": {
