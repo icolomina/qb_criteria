@@ -1,5 +1,7 @@
 <?php
 
+namespace Ict\QbCriteria;
+
 use Doctrine\ORM\QueryBuilder;
 use Symfony\Component\Serializer\Exception\ExceptionInterface;
 use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
