@@ -40,7 +40,7 @@ abstract class QueryBuilderCriteriaManager
     {
         $method = u('get_' . $key . 'Criteria')->camel()->toString();
 
-        if( !empty($value) || $value === 0 || $value === '0' || $value === false) {
+        if( !is_null($value)) {
             if(method_exists($this, $method)){
                 $this->$method($qb, $alias, $value);
             }
