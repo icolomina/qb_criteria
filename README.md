@@ -64,7 +64,7 @@ class ContractsCriteriaManager extends QueryBuilderCriteriaManager
     public function getEndAtCriteria(QueryBuilder $qb, string $alias, string|\DateTimeImmutable $value): void
     {
         $qb
-            ->andWhere($qb->expr()->gte("{$alias}.createdAt",':end_at'))
+            ->andWhere($qb->expr()->lte("{$alias}.createdAt",':end_at'))
             ->setParameter('end_at', $this->getAsDateTime($value))
         ;
     }
